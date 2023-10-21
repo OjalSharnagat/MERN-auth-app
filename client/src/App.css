@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: yellow;
+  color: black;
+}
+.nav-links {
+  color: black;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  border: 2px solid;
+  border-radius: 2px;
+}
+
+.logo {
+  font-size: 16px;
+  cursor: pointer;
+  font-family: cursive;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li:hover {
+  background-color: white;
+  transition: .3s;
+  border-radius: 4px;
+}
+
+.menu li {
+  padding: 2px 7px;
+  font-size: 12px;
+  color: black;
+}
+
+
+/* Responsive */
+
+input[type=checkbox] {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 12px;
+  font-weight: 600;
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display:none;
+    position: absolute;
+    background-color: yellow;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 6px 0;
+    margin-top: 10px;
+    border: 1px solid white;
+  }
+  .menu li:hover {
+    display: inline-block;
+    background-color: white;
+    transition: 0.3s ease;
+  }
+  .menu li  {
+    margin-top: 12px;
+  }
+  input[type=checkbox]:checked ~ .menu{
+    display: block;
+  }
+  .hamburger {
+    display: block;
+    padding: 1px;
+    cursor: pointer;
+  }  
+}
+/*--------Navbar end--------*/
+
+
+
+/***-------------Login------------***/
+
+.login-box {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 25px;
+  height: 75vh;
+}
+
+.left .right {
+  flex-grow: 1;
+}
+
+.left {
+  background-color: yellow;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  width: 400px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  
+.login-box .right input {
+  background-color: #D9D9D9;
+  border: none;
+  outline:none ;
+  font-size: 12px;
+  padding: 6px;
+}
+
+.login-box .right .inputs {
+  display: grid;
+  
+}
+
+.login-box .right .inputs button {
+  color: black;
+  border: none;
+  padding: 6px;
+  width: 120px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #D9D9D9;
+}
